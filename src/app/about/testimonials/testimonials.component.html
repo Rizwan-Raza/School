@@ -1,0 +1,33 @@
+<section class="padding-y-100 bg-primary wow fadeIn">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12 text-center mb-5">
+        <h4 class="text-white">
+          What Our People Say
+        </h4>
+      </div>
+      
+      <div class="col-lg-10 mx-auto">
+        <div class="owl-carousel dots-white" data-items="1" data-space="30" data-dots="true" data-autoplay="false">
+          
+          <div class="card card-body p-lg-5 text-center" *ngFor="let review of testimonials">
+            <img class="iconbox iconbox-xxxl mx-auto z-index-10" src="{{review.avatar}}" alt="">
+            <div class="my-4">
+              <h6>
+                {{review.name}}
+              </h6>
+              <p class="text-gray mb-0">
+                {{review.profession}}
+              </p>
+            </div>
+            <p class="mb-0 lead text-dark">
+              {{review.review}}
+            </p>
+          </div>
+          
+        </div>
+      </div> <!-- END col-12 -->
+    </div>  <!-- END row--> 
+  </div> <!-- END container-->
+</section>

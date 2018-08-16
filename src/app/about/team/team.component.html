@@ -1,0 +1,45 @@
+<section class="padding-y-100 wow fadeIn">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-4">
+        <h2>
+         The Executive Staff
+        </h2>
+        <div class="width-4rem height-4 bg-primary rounded mt-4 marginBottom-40 mx-auto"></div>
+      </div>
+  
+      <div class="col-lg-6 mt-2 wow fadeInUp" *ngFor="let staff of team">
+        <div class="row">
+          <div class="col-md-6 my-2">
+            <img src="{{staff.image}}" alt="">
+          </div>
+          <div class="col-md-6 my-4">
+            <h4 class="mb-0">
+                {{staff.name}}
+            </h4>
+            <p class="text-muted mb-0">
+                {{staff.profession}}
+            </p>
+            <p class="my-4">
+                {{staff.description}}
+            </p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="{{staff.facebook}}" class="btn btn-facebook iconbox iconbox-xs"><i class="ti-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="{{staff.twitter}}" class="btn btn-twitter iconbox iconbox-xs"><i class="ti-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="{{staff.googlePlus}}" class="btn btn-google-plus iconbox iconbox-xs"><i class="ti-google"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="{{staff.linkin}}" class="btn btn-linkedin iconbox iconbox-xs"><i class="ti-linkedin"></i></a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div> <!-- END row-->
+  </div> <!-- END container-->
+  </section>

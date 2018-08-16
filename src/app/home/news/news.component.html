@@ -1,0 +1,39 @@
+<section class="padding-y-100 bg-light-v2">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 text-center">
+        <h2 class="mb-4">
+          Latest School News
+        </h2>
+        <div class="width-3rem height-4 rounded bg-primary mx-auto"></div>
+      </div>
+    </div>
+    <!-- END row-->
+
+    <div class="row mt-4">
+
+      <div class="col-lg-4 col-md-6 marginTop-30 wow slideInUp" data-wow-delay=".1s" *ngFor="let news of newses">
+        <div class="card padding-30 shadow-v1">
+          <p class="text-primary">
+            {{news.date}}
+          </p>
+          <a href="#" class="h4 mb-3">
+            {{news.title}}
+          </a>
+          <p>
+            {{news.news}}
+          </p>
+          <a routerLink="about" class="btn btn-outline-primary align-self-start mt-2">
+            Read More
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- END row-->
+  </div>
+  <!-- END container-->
+</section>
+

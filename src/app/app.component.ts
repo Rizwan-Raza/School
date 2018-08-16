@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'J.B.U. Academy';
+  email = "aftabalam1101@gmail.com";
+  tel = "+919631229621";
+
+  socialUrls = [
+    {icon: "facebook", url: "https://www.facebook.com"},
+    {icon: "twitter", url: "https://www.twitter.com"},
+    {icon: "linkedin", url: "https://www.linkedin.com"}
+  ];
 }

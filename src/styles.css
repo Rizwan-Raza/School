@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Caros Regular';
+    src: url('assets/fonts/caros/Caros.otf');
+}
+@font-face {
+    font-family: 'Caros Medium';
+    src: url('assets/fonts/caros/Caros_Medium.otf');
+}
+@font-face {
+    font-family: 'Caros Bold';
+    src: url('assets/fonts/caros/Caros_Bold.otf');
+}
+svg{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display:inline-block;
+}
+
+
+.navbar-brand, .navbar-brand-white {
+    /* font-family: 'Caros Medium'; */
+    /* font-family: 'Caros Regular'; */
+    font-family: 'Caros Bold';
+    font-size: 40px;
+}
+.navbar-brand {
+    color: #000000;
+}
+.navbar-brand-white {
+    color: #ffffff;
+}
+.breadcrumb-item a:hover {
+    color: #00CB54 !important;
+}
+.breadcrumb-item a{ cursor: pointer;}

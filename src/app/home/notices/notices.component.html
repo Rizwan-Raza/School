@@ -1,0 +1,70 @@
+<section class="padding-y-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="row align-items-center">
+          <div class="col-md-6 my-5">
+            <div class="position-relative">
+                <div class="video-container">
+                  <img class="rounded w-100" src="assets/img/360x400/1.jpg" alt="">
+                    <a href="assets/video/latest.mp4" data-fancybox class="iconbox iconbox-lg bg-white position-absolute absolute-center">
+                      <i class="ti-control-play text-primary"></i>
+                    </a>
+                </div>
+              <!-- <a href="https://www.youtube.com/watch?v=7e90gBu4pas" data-fancybox class="iconbox iconbox-lg bg-white position-absolute absolute-center">
+                <i class="ti-control-play text-primary"></i>
+              </a> -->
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <h2>
+              <small class="d-block text-gray">Welcome to</small>
+              <span class="text-primary">J.B.U</span> Academy
+            </h2>
+            <p class="my-4">
+              J.B.U Academy is managed by Md. Salim. The school was founded by Md. Salim who by profession is a Teacher (B.Ed) and has
+              extensive Work Experience in the field of Teaching and Education. J.B.U.A is an English Medium, Co-Ed, KG 1st to 8th Class School and
+              is considered to be Best School in Khajurha, Bhore, Gopalganj, Bihar.
+            </p>
+            <a routerLink="about" class="btn btn-outline-primary">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-5 mt-md-0" *ngIf="notices">
+        <div class="card shadow-v2 z-index-5" data-offset-top-xl="-160">
+          <div class="card-header bg-primary text-white border-bottom-0">
+            <span class="lead font-semiBold text-uppercase">
+              Notice Board
+            </span>
+          </div>
+            <div *ngFor="let notice of notices | slice:0:3" class="p-4 border-bottom wow fadeInUp">
+              <p class="text-primary mb-1">
+                {{notice.date}}
+              </p>
+              <a href="about">
+                {{notice.notice}}
+              </a>
+            </div>
+
+            <div class="p-4" *ngIf="notices.length > 3">
+                <a href="about" class="btn btn-link pl-0">
+                  View All Notices
+                </a>
+              </div>
+            </div>
+
+          <div class="p-4" *ngIf="notices.length == 0">
+                No Notices
+          </div>
+      </div>
+    </div>
+    <!-- END row-->
+  </div>
+  <!-- END container-->
+</section>
+
+
+
+
