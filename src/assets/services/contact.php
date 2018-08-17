@@ -29,7 +29,7 @@ $msg .= '       <div style="color: #fff; background-color: #337ab7;padding: 10px
 $msg .= '       <div style="background-color: #eee; padding: 10px">';
 $msg .= '           <p style="text-indent: 50px;"><b>'.$message.'</b></p>';
 $msg .= '       </div>';
-$msg .= '       <div style="color: #fff; background-color: #337ab7;padding: 10px">'.$name.'`s Personal Informations: </div>';
+$msg .= '       <div style="color:#fff;background-color: #337ab7;padding: 10px">'.$name.'`s Personal Informations: </div>';
 $msg .= '       <div style="background-color: #eee; padding: 10px">';
 $msg .= '           <table>';
 $msg .= '               <tr><td>Name: </td><td><b>'.$name.'</b></td></tr>';
