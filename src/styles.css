@@ -32,7 +32,7 @@ svg{
 .navbar-brand-white {
     color: #ffffff;
 }
-.breadcrumb-item a:hover {
+nav .nav-link:hover, .breadcrumb-item a:hover {
     color: #00CB54 !important;
 }
-.breadcrumb-item a{ cursor: pointer;}
+nav .nav-link, .breadcrumb-item a{ cursor: pointer;}

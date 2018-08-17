@@ -19,16 +19,17 @@ import { FacultyModule } from './faculty/faculty.module';
 import { SpVcModule } from './sp-vc/sp-vc.module';
 import { AdmissionComponent } from './admission/admission.component';
 import { AdmissionModule } from './admission/admission.module';
+import { SentComponent } from './contact/sent/sent.component';
 
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
   {path: "about", component: AboutComponent},
-  {path: "admission", component: AdmissionComponent},
+  {path: "admission", component: AdmissionComponent, loadChildren: './admission/admission.module#AdmissionModule'},
   {path: "faculty", component: FacultyComponent},
   {path: "sp-vc", component: SpVcComponent},
-  {path: "contact", component: ContactComponent},
-  {path: '', loadChildren: './home/home.module#HomeModule'}
+  {path: "contact", component: ContactComponent, loadChildren: './contact/contact.module#ContactModule'},
+  {path: "", loadChildren: './home/home.module#HomeModule'}
 ];
 @NgModule({
   declarations: [

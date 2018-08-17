@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   @Input() title;
-
+  expandable: boolean = false;
   navLinks = [
     {link: '', text: 'Home'},
     {link: 'about', text: 'About'},
@@ -18,6 +18,16 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+		this.onResize({target: window});
+	}
+  onResize(event) {
+		const element = event.target.innerWidth;
+
+		if (element < 480) {
+			this.expandable = true;
+		} else {
+			this.expandable = false;
+		}
+	}
 
 }

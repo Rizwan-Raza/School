@@ -4,7 +4,7 @@
       <div class="navbar-brand">
         <!-- <a class="logo-default" href="index.html"><img alt="" src="assets/img/logo-black.png"></a> -->
         <!-- <h1 class="nav-brand"><a class="logo-default" href="index.html">J.B.U. Academy</a></h1> -->
-        <a class="logo-default" routerLink=""><img alt="" src="assets/img/logo.png" height="48px"> {{title}}</a>
+        <a class="logo-default" routerLink=""><img alt="" src="assets/img/logo.png" height="48px"> <span *ngIf="!expandable"> {{title}}</span> <span *ngIf="expandable">J.B.U.A.</span></a>
       </div>
       <span aria-expanded="false" class="navbar-toggler ml-auto collapsed" data-target="#ec-nav__collapsible" data-toggle="collapse">
         <div class="hamburger hamburger--spin js-hamburger">

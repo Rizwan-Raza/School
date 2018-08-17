@@ -64,22 +64,22 @@
         <div class="width-4rem height-4 bg-primary my-2 mx-auto rounded"></div>
       </div>
       <div class="col-12 text-center">
-        <form action="" method="POST" class="card p-md-5 shadow-v2">
+        <form action="assets/services/contact.php" method="POST" class="card p-md-5 shadow-v2">
           <p>
               You may contact the admissions counselor through phone or by making a personal visit to our admissions office to more receive information about the admission process and the school. 
           </p>
           <div class="row mt-4 mx-0">
             <div class="col-md-4 mb-4">
-              <input type="text" class="form-control" placeholder="Name" required>
+              <input type="text" class="form-control" placeholder="Name" required name="name">
             </div>
             <div class="col-md-4 mb-4">
-              <input type="email" class="form-control" placeholder="Email" required>
+              <input type="email" class="form-control" placeholder="Email" required name="email">
             </div>
             <div class="col-md-4 mb-4">
-              <input type="tel" class="form-control" placeholder="Phone number" required>
+              <input type="tel" class="form-control" placeholder="Phone number" required name="number">
             </div>
             <div class="col-12">
-              <textarea type="text" class="form-control" placeholder="Description for class" rows="7"></textarea>
+              <textarea type="text" class="form-control" placeholder="Description for class" rows="7" name="message"></textarea>
               <button type="submit" class="btn btn-primary mt-4">Apply Now</button>
             </div>
           </div>

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'J.B.U. Academy';
-  email = "aftabalam1101@gmail.com";
+  email = "info.jbuacademy@gmail.com";
   tel = "+919631229621";
 
   socialUrls = [
