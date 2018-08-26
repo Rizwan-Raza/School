@@ -12,7 +12,7 @@
     font-family: 'Caros Bold';
     src: url('assets/fonts/caros/Caros_Bold.otf');
 }
-svg{
+#L2 svg{
     width: 100px;
     height: 100px;
     margin: 20px;
